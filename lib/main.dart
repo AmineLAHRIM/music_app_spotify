@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       theme: AppTheme.themeData,
-      home: getIt<SplashPage>(),
+      home: SplashPage(),
       routes: {
         HomePage.routeName: (ctx) => getIt<HomePage>(),
       },

@@ -20,8 +20,7 @@ class HomePage extends StatelessWidget {
           child: RaisedButton(
             child: Text('Button'),
             onPressed: (){
-              //component.compEvents.sink.add(HomeEvents.buttonClicked());
-              musicService.clickedSubject.sink.add(20);
+              component.compEvents.sink.add(HomeEvents.buttonClicked());
             },
           ),
         ),

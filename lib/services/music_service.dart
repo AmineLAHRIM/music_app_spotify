@@ -10,17 +10,7 @@ import 'package:rxdart/rxdart.dart';
 class MusicService {
   MusicRepository musicRepository;
 
-  var clickedSubject=BehaviorSubject<int>.seeded(0);
-  int clickTimes=0;
-
-
   var musicsSubject = BehaviorSubject<List<Music>>();
 
-  MusicService(@required this.musicRepository){
-    print('MusicService Constructor');
-    clickedSubject.listen((value) {
-      clickTimes++;
-      print('MusicService clickedTimesSubject'+clickTimes.toString());
-    });
-  }
+  MusicService(@required this.musicRepository);
 }
